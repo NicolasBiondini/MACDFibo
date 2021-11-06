@@ -10,7 +10,7 @@ plt.style.use('fivethirtyeight')
 
 
 #Get and show the data
-df = pd.read_csv('./MACDFibbo/newbinance.csv')
+df = pd.read_csv('./newbinance.csv')
 df = df.set_index(pd.DatetimeIndex(df['date'].values))
 df = df.iloc[::-1]
 df = df[-300:]
